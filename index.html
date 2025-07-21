@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Iniyaa's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
 </head>
 <body>
   <header class="navbar">
@@ -20,13 +23,13 @@
 </header>
 
 <!-- 🦋 Hero Section -->
-<section id="hero" class="section-box">
+<section id="hero" class="section-box" data-aos="fade-right">
   <h2>Hi, I'm Iniyaa 👋</h2>
   <p>Aspiring Frontend Developer | 2nd Year CSE Student</p>
 </section>
 
 <!-- 💫 About Section -->
-<section class="section-box" id="about">
+<section class="section-box" id="about"  data-aos="fade-right">
   <h2>About Me</h2>
   <p>
     Hey there! I'm Iniyaa, a Computer Science undergraduate with a wild passion for building cool tech stuff that actually makes an impact. 
@@ -37,20 +40,20 @@
 </section>
 
 <!-- 📄 Resume Section -->
-<section class="section-box" id="resume">
+<section class="section-box" id="resume" data-aos="fade-right">
   <h2>My Resume</h2>
   <p>You can download my resume here 👇</p>
   <a href="resume.pdf" download class="resume-btn">📄 Download Resume</a>
 </section>
 
 <!-- 🚀 Projects Section -->
-<section class="section-box" id="projects">
+<section class="section-box" id="projects" data-aos="fade-right">
   <h2>Projects</h2>
   <div class="project">
     <h3>Weather Dashboard 🌤️</h3>
     <p>A web app that shows real-time weather data using OpenWeatherMap API.</p>
  
-</div><div class="project">
+</div><div class="project" data-aos="fade-right">
   <h3>Event Management System 🖥</h3>
   <p>A web-based system to handle event registrations, scheduling, and participant tracking with admin dashboard.</p>
   
@@ -60,7 +63,7 @@
 </section>
 
 <!-- 🛠 Skills Section -->
-<section class="section-box" id="skills">
+<section class="section-box" id="skills" data-aos="fade-right">
   <h2>Skills</h2>
   <ul>
     <li>HTML & CSS</li>
@@ -71,7 +74,7 @@
 </section>
 
 <!-- 📬 Contact Section -->
-<section class="section-box" id="contact">
+<section class="section-box" id="contact" data-aos="fade-right">
   <h2>Contact</h2>
   <p>Email: iniyaa241@gmail.com</p>
   <p>LinkedIn: <a href="https://www.linkedin.com/in/iniyaa-m-12i/" target="_blank">https://www.linkedin.com/in/iniyaa-m-12i/</a></p>
@@ -82,5 +85,14 @@
   <footer>
     <p>&copy; 2025 Iniyaa. All rights reserved.</p>
   </footer>
+  <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200, // 👈 animation duration in ms (default is 400)
+    once: true // optional: animates only once when scrolled into view
+  });
+</script>
+
 </body>
 </html>
