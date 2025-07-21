@@ -49,6 +49,19 @@
 .nav-links a:hover {
   color: #1e90ff; /* Blue on hover */
 }
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05) rotate(2deg);
+}
 
 
 /* 🦋 Hero Section */
