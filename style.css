@@ -287,3 +287,42 @@ footer {
   cursor: pointer;
   margin-left: auto;
 }
+.resume-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.resume-btn {
+  padding: 0.7rem 1.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* View button */
+.resume-btn.view {
+   background-color: #1c85d0;
+  color: #fff;
+  border: 2px solid #1c85d0;
+}
+
+.resume-btn.view:hover {
+  background-color: #1c85d0;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Download button */
+.resume-btn.download {
+  background-color: #1c85d0;
+  color: #fff;
+}
+
+.resume-btn.download:hover {
+  background-color: #093c60;
+  transform: translateY(-3px);
+}
